@@ -1,19 +1,20 @@
 export default {
     app: {
-        name: "hello-world",
-        identifier: "helloworld.electrobun.dev",
+        name: "buncord",
+        identifier: "buncord.legcord.app",
         version: "0.0.1",
     },
     build: {
         views: {
-            mainview: {
-                entrypoint: "src/mainview/index.ts",
+            splash: {
+                entrypoint: "src/splash/index.ts",
                 external: [],
             },
         },
         copy: {
-            "src/mainview/index.html": "views/mainview/index.html",
-            "src/mainview/index.css": "views/mainview/index.css",
+            "src/splash/index.html": "views/splash/index.html",
+            "src/splash/index.css": "views/splash/index.css",
+            "src/splash/loading.webm": "views/splash/loading.webm",
         },
         mac: {
             bundleCEF: false,

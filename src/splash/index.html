@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Legcord</title>
+        <style>
+            @import url("./index.css");
+        </style>
+        <script>
+            window.onbeforeunload = function () {
+                const style = document.createElement("style");
+                style.textContent = "body { display: none; }";
+                document.head.append(style);
+            };
+        </script>
+    </head>
+
+    <body>
+        <div class="container">
+            <video autoplay loop class="logo" id="splashscreen-legcord">
+                <source src="./loading.webm" type="video/webm" />
+            </video>
+            <p id="text-splashscreen">Loading...</p>
+        </div>
+    </body>
+    <script>
+
+    </script>
+</html>
